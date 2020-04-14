@@ -6,109 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="SM&UA" content="Smart Manufacturers & Users Association" />
-    <meta name="keywords" content="digitalisation, smart, IIOT, association" />
-    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="description"
+      content="digitalisation, smart, IIOT, association"
+    />
+    <link rel="stylesheet" href="home.css" />
   </head>
-  <body onload = "JavaScript:AutoRefresh(300000);">
-      <nav> 
-           
-          <span class="hamburger">
-              <a href="#" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                  <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-                  <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-                  <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-                </svg>
-              </a>
-            </span> 
-            
-            <ul class="navbar">
-                <li><a href="Milestone2-updated.html">Contact</a></li>
-                <li><a href="Milestonehomepage1.html">About</a></li>
-                <li><a href="Milestonemembership.html">Membership</a></li>
-                <li><a href="JScart2.html">Shop</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
-            
-            <h1>UKSMUA</h1>
-            <h2>UK Smart Manufacturers' & Users' Association</h2>
-        </nav>
-          <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#">Home</a>
-            <a href="Milestonehomepage1.html">About</a>
-            <a href="Milestonemembership.html">Membership</a>
-            <a href="Milestone2-updated.html">Contact</a>
-            <a href="JScart2.html">Shop</a>
-        </div>
-        
-        <main class="page-main"> 
-                <time id="date" class="clocktext"></time>
-                <time id="time" class="clocktext"></time>
-                
-                <div class="call-outs-container">
-                        <div class="call-out">
-                               
-                                <h4>News</h4>
-                            <p class="published">  
-                            </p>
-                            <p class="author"></p>
-                            <p class="description"></p>
-                            <p class="title">
-                            </p>
+  <nav>
+    <span class="hamburger">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar">
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="media.html">Media & News</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <h1>UKSMUA</h1>
+    <h2>UK Smart Manufacturers' & Users' Association</h2>
+  </nav>
 
-                            <p class="published2">  
-                                </p>
-                                <p class="author2"></p>
-                                <p class="description"></p>
-                                <p class="title2">
-                                </p>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="media.html">Media & News</a>
+    <a href="membership.html">Membership</a>
+    <a href="contact.html">Contact us</a>
+  </div>
+  <body>
+    <section class="video-main">
+      <div class="fullscreen-video-wrap">
+        <video src="Industry4.mov" id="myVideo" autoplay muted loop></video>
+      </div>
 
-                        </div>
-                
-                        
-                        <div class="call-out">
-                             
-                            <h4>Converter</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
-                        </div>
-                        
-                        <div class="call-out">
-                                
-                            
-                            <h4>Find your weather</h4>
-                            
-                            <time id="date" class="clocktext"></time>
-                            <time id="time" class="clocktext"></time>
-                            <label id="place" class="input">
-                                <input type="text" placeholder="Enter a town or city" class="input-text">
-                                <input type="submit" value="Submit" class="submit">
-                                </label>
-                           
-                        <div class="call-out-weather">
-                            <h4 class="name" id="name"></h4>
-                            <p class="temp"></p>
-                            <p class="desc"></p>
-                            <p class="icon">
-                            </p>
-                            <p class="country"></p>
-                        </div>
-                    </div>
-                </div>
-               
-        </main>
-       
-          
-    <footer class="page-footer">
-      <div>
-        <h7 class="footer-head"
-          >UKSMUA</h7
-        >
-          
+      <div id="overlay"></div>
+      <div id="videoMessage">
+        <h4>Welcome to the UKSMUA</h4>
+        <p>
+          "Bringing together buyers and suppliers of industrial smart technology
+          and services to make digitalisation a reality in the UK."
+          <button id="myBtn" onclick="myFunction()">Pause video</button>
+          <button id="myBtn" onclick="enableMute()" type="button">
+            Sound off
+          </button>
+          <button id="myBtn" onclick="disableMute()" type="button">
+            Sound on
+          </button>
+        </p>
+        <p class="videoClick">
+          <a href="membership.html">Click to find out more</a>
+        </p>
       </div>
-      <div class="footer-copyright">
-        © 2020 Copyright Aaron Blutstein
+    </section>
+
+    <section class="boxes">
+      <div class="box">
+        <h3>John Chambers - Cisco</h3>
+        <p>
+          “At least 40% of all businesses will die in the next 10 years… if they
+          don’t figure out how to change their entire company to accommodate new
+          technologies.”
+        </p>
       </div>
-    </footer>
-    <script src="index.js"></script>
+
+      <div class="box">
+        <h3>George Westerman - MIT</h3>
+        <p>
+          “When digital transformation is done right, it’s like a caterpillar
+          turning into a butterfly, but when done wrong, all you have is a
+          really fast caterpillar.”
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>Jeff Bezos - Amazon</h3>
+        <p>
+          “There is no alternative to digital transformation. Visionary
+          companies will carve out new strategic options for themselves — those
+          that don’t adapt, will fail.”
+        </p>
+      </div>
+    </section>
+  </body>
+  <footer class="page-footer">
+    <div>
+      <h5>UKSMUA</h5>
+    </div>
+    <div class="footer-copyright">
+      © 2020 Copyright Aaron Blutstein
+    </div>
+  </footer>
+  <script src="home.js"></script>
 </html>

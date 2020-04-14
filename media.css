@@ -1,0 +1,514 @@
+* {
+  box-sizing: border-box;
+  font-family: "century gothic";
+  color: white;
+}
+
+body {
+  background: white;
+  margin: auto 50px;
+}
+
+@font-face {
+  font-family: "century gothic";
+  src: url("century-gothic.ttf");
+}
+
+@font-face {
+  font-family: "digtal-7";
+  src: url("digital-7.ttf");
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.1s ease;
+}
+
+/*nav*/
+nav {
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #225470;
+  z-index: 1;
+}
+
+ul li {
+  float: right;
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  margin: 5em 10px;
+}
+
+li a:hover {
+  background-color: red;
+}
+
+/*hamburger nav*/
+.hamburger a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.hamburger {
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.hamburger a:hover {
+  background-color: red;
+  color: #000;
+}
+
+/*side nav*/
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: red;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* headlines*/
+h1 {
+  font: 95px "century gothic";
+  line-height: 40px;
+  padding-top: 30px;
+  margin: auto;
+  display: flex;
+  padding-left: 17px;
+  color: white;
+}
+
+h2 {
+  font: 17.5px "century gothic";
+  line-height: 60px;
+  margin: auto;
+  display: flex;
+  padding-left: 25px;
+  color: white;
+}
+
+h3 {
+  font: 2rem "century gothic";
+  margin-top: -8em;
+}
+
+h4 {
+  font: 4em "century gothic";
+  margin-bottom: 0;
+  line-height: 0.9em;
+  color: white;
+  margin-top: -0.5em;
+}
+
+h5 {
+  font: 1.3rem "century gothic";
+  color: white;
+  text-align: center;
+  margin-top: -1em;
+  padding-top: 30px;
+}
+
+h6 {
+  font: 40px "century gothic";
+  line-height: 60px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  padding-left: 17px;
+  color: white;
+}
+
+/*weather api*/
+.input {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.input-text {
+  width: 170px;
+  height: 33px;
+  padding: 5px 10px;
+  background: white;
+  border: 0.5px rgb(179, 173, 173) solid;
+  color: black;
+}
+
+.btn {
+  background: white;
+  color: #225470;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+}
+
+.btn:hover {
+  background: red;
+  color: white;
+}
+
+.desc {
+  margin-top: -0.7em;
+  margin-bottom: -0.5em;
+}
+
+.icon {
+  margin-top: -0.7em;
+  margin-bottom: -0.5em;
+}
+
+.name {
+  margin-top: 1em;
+  margin-bottom: -0.5em;
+}
+
+.country {
+  margin-top: -0.7em;
+  margin-bottom: -0.5em;
+}
+
+/*clock*/
+.clocktext {
+  display: block;
+  margin: 0;
+  padding: 1px 0 0 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  font-family: "digital-7";
+}
+.infotext {
+  padding: 0 5px 0 5px;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  width: auto;
+}
+#date {
+  font-family: "century gothic";
+  padding-top: 15px;
+  font-size: 12px;
+  color: white;
+}
+#time {
+  margin: 1px 0 0 0;
+  color: white;
+  font-size: 40px;
+}
+#time span {
+  display: inline-block;
+  padding: 0;
+  vertical-align: baseline;
+  text-align: left;
+  width: 2em;
+  margin: 0 0 0 0.5em;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  white-space: normal;
+  font-size: 10px;
+  color: white;
+}
+
+#refreshBtn {
+  font-size: 15px;
+  color: #225470;
+}
+
+#refreshBtn:hover {
+  color: white;
+}
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+    "headline-topbox headline-topbox top-box-a"
+    "headline-topbox headline-topbox top-box-b";
+}
+
+/* Showcase */
+.headline-topbox {
+  grid-area: headline-topbox;
+  min-height: 400px;
+  background: url("Robot.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  background-color: #225470;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.headline-news p {
+  font-size: 1.3rem;
+  margin-top: 1em;
+  color: white;
+}
+
+/* Top Box */
+.top-box {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 1em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+  background-color: #18232b;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+  background-color: #18232b;
+}
+
+/*technology news stories*/
+.stories a {
+  color: white;
+}
+.more-articles {
+  padding: 10px;
+  margin-bottom: 3em;
+}
+.more-articles p {
+  border-bottom: 1px solid white;
+  padding: 5px 0px 15px 0px;
+  font-size: 80%;
+}
+
+/* live news api and features */
+
+.live-news {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 1em;
+}
+.info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 3em;
+  padding-bottom: 3em;
+  margin-top: 1px;
+  margin-bottom: 1em;
+  background: #225470;
+  color: black;
+}
+.info p {
+  color: white;
+}
+
+.feature-article {
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 1em;
+}
+
+/* download image library */
+.download {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 20px;
+  font: 20px "century gothic";
+  color: #225470;
+  text-align: center;
+}
+
+.download img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+.info .btn {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+/*footer*/
+.page-footer {
+  background-color: #225470;
+  padding: 20px 0 20px;
+  line-height: 5px;
+}
+
+.footer-copyright {
+  color: #fff;
+  font-size: 10px;
+  padding: 20px 20px;
+  margin-top: 5px;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  ul a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p.sidebar1 {
+    font-size: 35px;
+    left: -487px;
+    top: 150px;
+    height: 150em;
+    border-radius: 0px;
+    width: 340px;
+  }
+}
+
+@media (max-width: 800px) {
+  #date {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .input .submit {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .input-text {
+    width: 180px;
+    height: 20px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .top-container {
+    grid-template-areas:
+      "headline-topbox headline-topbox"
+      "top-box-a top-box-b";
+  }
+}
+
+@media (max-width: 800px) {
+  .top-container {
+    grid-template-areas:
+      "headline-topbox"
+      "top-box-a"
+      "top-box-b";
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .info {
+    grid-template-columns: 1fr;
+    padding: 0.5em;
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  h4 {
+    font-size: 1.5rem;
+    margin-top: 3em;
+  }
+  .headline-topbox p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .live-news h5 {
+    margin: 10px;
+    padding-left: 5px;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .live-news p {
+    padding-left: 10px;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  #refreshBtn {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  h6 {
+    font: 20px "century gothic";
+  }
+}

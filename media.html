@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SM&UA</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="SM&UA" content="Smart Manufacturers & Users Association" />
+    <meta name="description" content="digitalisation, smart, IIOT, association" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+      <nav> 
+          <span class="hamburger">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                  <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                  <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+              </a>
+            </span> 
+            
+            <ul class="navbar">
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="media.html">Media & News</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <h1>UKSMUA</h1>
+            <h2>UK Smart Manufacturers' & Users' Association</h2>
+            
+        </nav>
+
+          <div id="side-menu" class="side-nav">
+            <a href="" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media & News</a>
+            <a href="membership.html">Membership</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    <body>
+        <section class="top-container">
+            <header class="headline-topbox">
+                <h3>News & Media</h3>
+                <h4>Hannover Messe 2020 postponed</h4>
+                <p>Deutsche Messe has postponed Hannover Messe 2020 to July 2020 as a result of global concerns surrounding Coronavirus.</p>
+                Read more<a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/663/Hannover_Messe_2020_postponed.html" class="btn">All the latest from Hannover Messe</a>
+            </header>
+            <div class="top-box top-box-a">
+                <time id="date" class="clocktext"></time>
+                <time id="time" class="clocktext"></time>
+                <h5>Find your local weather</h5>
+                <label class="input">
+                    <input type="text" placeholder="Enter a town or city" class="input-text">
+                    <input type="submit" value="Submit" class="btn">
+                </label>
+                <p id="name" class="name"></p>
+                <p class="temp"></p>
+                <p class="desc"></p>
+                <p class="icon"></p>
+                <p class="country"></p>
+            </div>
+            <div class="top-box top-box-b">
+                <h5>Latest technology news</h5>
+                <div class="more-articles">
+                    <div class="stories">
+                        <img src="3dprinting.jpg" alt="Unleashing your full potential" width="220" height="125" /> <p><a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/666/Unleashing_the_full_potential_of_additive_manufacturing.html">Unleashing the full potential of additive manufacturing</a></p>
+                        <p><a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/660/Green_is_key:_sustainability_in_battery_manufacturing_for_E-mobility.html">Green is key: sustainability in battery manufacturing for E-mobility</a></p> 
+                        <p><a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/659/Machine_learning___predictive_analytics:_Reshaping_manufacturing_.html">Machine learning & predictive analytics: Reshaping manufacturing</a></p>
+                    </div>
+                    <div class="stories">
+                        <img src="cobots.jpg" alt="Robots or cobots; Which to choose?" width="220" height="125" /> <Robots or cobots; Which to choose?p><a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/644/Robots_or_cobots;_Which_to_choose_.html"></a></p>
+                            <p><a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/656/Are_you_ready_to_own_the_product_lifecycle_.html">Are you ready to own the product lifecycle?</a></p> 
+                            <p><a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/653/Increased_process_reliability_through_intelligent_scanning.html">Increased process reliability through intelligent scanning</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="feature-article">
+                <img class="feature-image" src="smua-image.jpg" alt="Unleashing your full potential"  /> <p>
+                    <h6>Feature articles</h6>
+                    <p>Step into SICK’s futuristic new Industry 4.0 production facility, and the first thing you notice is the quiet. Then, you see the pristine rows of glass-encased, robotic production cells and the fleet of small, elegant Automated Guided Carts gliding effortlessly between them.</p>
+                <p>Nestled in the valley town of Hochdorf, near Freiburg in the German Black Forest, a fully-operational Smart Factory has been built completely from scratch. SICK’s smart photoelectric sensors, among them core product ranges including the NextGen sensor family, are manufactured in high volumes and with a high level of product variety...</p>
+                <a href="https://smartmachinesandfactories.com/news/fullstory.php/aid/643/A_Glimpse_through_the_doors_of_a_Smart_Factory.html" class="btn">Click to read more</a>
+            </div>
+            <div class="live-news">
+                <h6>International news</h6>
+                <h5 class="title"></h5>
+                <p class="author"></p>
+                <p class="description"></p>
+                <p class="newsUrl"></p>
+                
+                <h5 class="title2"></h5>
+                <p class="author2"></p>
+                <p class="description2"></p>
+                <p class="newsUrl2"></p>
+                <input id="refreshBtn" type="button" value="Click to refresh the page for the latest news" class="btn" onclick='refreshPage()'/> 
+            </div>
+           
+        </section>
+        
+        <section class="download">
+            Download image library - for editorial use only
+            <a href="Manufacturing.jpg" download>
+                <img src="Manufacturing.jpg" alt="Manufacturing">
+            </a>
+            <a href="3dprinting.jpg" download>
+                <img src="3dprinting.jpg" alt="3dprinting">
+            </a>
+            
+            <a href="Turck.jpg" download>
+                <img src="Turck.jpg" alt="Turck">
+            </a>
+            
+            <a href="smua-image.jpg" download>
+                <img src="smua-image.jpg" alt="UKSMUA">
+            </a>
+            
+            <a href="cobots.jpg" download>
+                    <img src="cobots.jpg" alt="Cobots">
+                </a>
+
+            <a href="Makeuk.jpg" download>
+                <img src="Makeuk.jpg" alt="Makeuk">
+            </a>
+        </section>
+    </body>
+    <footer class="page-footer">
+        <h6>UKSMUA</h6>
+        <div class="footer-copyright">
+            © 2020 Copyright Aaron Blutstein
+        </div>
+    </footer>
+    <script src="media.js"></script>
+</html>

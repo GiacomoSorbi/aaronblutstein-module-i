@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SM&UA</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="SM&UA" content="Smart Manufacturers & Users Association" />
+    <meta
+      name="description"
+      content="digitalisation, smart, IIOT, association"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <nav>
+    <span class="hamburger">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar">
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="media.html">Media & News</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <h1>UKSMUA</h1>
+    <h2>UK Smart Manufacturers' & Users' Association</h2>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="media.html">Media & News</a>
+    <a href="membership.html">Membership</a>
+    <a href="contact.html">Contact us</a>
+  </div>
+  <body>
+    <main>
+      <div class="container">
+        <form>
+          <h3>Contact us now</h3>
+          <div class="identity-label">
+            <div class="id-label">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="id-entry">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your first name"
+              />
+            </div>
+          </div>
+          <div class="identity-label">
+            <div class="id-label">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="id-entry">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your surname name"
+              />
+            </div>
+          </div>
+
+          <div class="identity-label">
+            <div class="id-label">
+              <label for="email">Email address</label>
+            </div>
+            <div class="id-entry">
+              <input
+                type="text"
+                id="telephone"
+                name="email"
+                placeholder="Please enter your email address"
+              />
+            </div>
+          </div>
+          <div class="identity-label">
+            <div class="id-label">
+              <label for="telephone">Telephone</label>
+            </div>
+            <div class="id-entry">
+              <input
+                type="text"
+                id="telephone"
+                name="lastname"
+                placeholder="Please enter your telephone number"
+              />
+            </div>
+          </div>
+          <div class="identity-label">
+            <div class="id-label">
+              <label for="country">Country</label>
+            </div>
+            <div class="id-entry">
+              <select id="country" name="country">
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="united-states">United States</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="portugal">Portugal</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="ireland">Ireland</option>
+              </select>
+            </div>
+          </div>
+          <div class="identity-label">
+            <div class="id-label">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="id-entry">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Please enter your query here"
+                style="height:200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="identity-label">
+            <input type="submit" value="Contact us now" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <footer class="page-footer">
+    <div>
+      <h5>UKSMUA</h5>
+    </div>
+    <div class="footer-copyright">
+      © 2020 Copyright Aaron Blutstein
+    </div>
+  </footer>
+  <script src="contact.js"></script>
+</html>
