@@ -1,161 +1,10 @@
-* {
-  box-sizing: border-box;
-  font-family: "century gothic";
-  color: white;
-}
-
-body {
-  background: white;
-  margin: auto 50px;
-}
-
-@font-face {
-  font-family: "century gothic";
-  src: url("century-gothic.ttf");
-}
-
-a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
-
-/*nav*/
-nav {
-  height: 150px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  background-color: #225470;
-  line-height: 0.8;
-  z-index: 1;
-}
-
-ul li {
-  float: right;
-  list-style-type: none;
-}
-
-li a {
-  color: white;
-  text-align: center;
-  padding: 14px 10px;
-  text-decoration: none;
-  margin: 5em 10px;
-}
-
-li a:hover {
-  background-color: red;
-}
-
-/*hamburger nav*/
-.hamburger a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 7px 15px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.hamburger {
-  margin: 8px 0 0 0;
-  list-style: none;
-}
-
-.hamburger a:hover {
-  background-color: red;
-  color: #000;
-}
-
-.side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
-
-.side-nav a {
-  padding: 10px 10px 10px 30px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #ccc;
-  display: block;
-  transition: 0.3s;
-}
-
-.side-nav a:hover {
-  color: #fff;
-}
-
-.side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
 main {
   background-color: #94c0d8;
 }
 
-h1 {
-  font: 95px "century gothic";
-  line-height: 40px;
-  padding-top: 30px;
-  margin: auto;
-  display: flex;
-  padding-left: 17px;
-  color: white;
-}
-
-h2 {
-  font: 17.5px "century gothic";
-  line-height: 60px;
-  margin: auto;
-  display: flex;
-  padding-left: 25px;
-  color: white;
-}
-
 h3 {
-  font: 25px "century gothic";
-  color: white;
+  font-size: 22.5px;
 }
-
-h5 {
-  font: 40px "century gothic";
-  line-height: 60px;
-  padding: 10px;
-  margin: auto;
-  display: flex;
-  padding-left: 17px;
-  color: white;
-}
-
-h6 {
-  font: 40px "century gothic";
-  line-height: 60px;
-  padding: 10px;
-  margin: auto;
-  display: flex;
-  padding-left: 17px;
-  color: white;
-}
-
 /* Top Container, showcase box and top boxes */
 .top-container {
   display: grid;
@@ -199,8 +48,7 @@ h6 {
 }
 
 /* input */
-input[type="text"],
-input[type="submit"] {
+input {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -208,20 +56,6 @@ input[type="submit"] {
   border: 1px solid rgb(12, 18, 53);
   color: black;
   box-sizing: border-box;
-}
-
-input[type="checkbox"] {
-  margin-top: 16px;
-}
-
-input[type="submit"] {
-  color: black;
-  border: none;
-}
-
-input[type="submit"]:hover {
-  color: rgb(27, 16, 16);
-  opacity: 0.8;
 }
 
 .registerbtn {
@@ -236,7 +70,8 @@ input[type="submit"]:hover {
 }
 
 .registerbtn:hover {
-  opacity: 1;
+  background: white;
+  color: red;
 }
 
 .about-info {
@@ -368,50 +203,7 @@ input[type="submit"]:hover {
   background-color: #4c809c;
 }
 
-/*footer*/
-.page-footer {
-  background-color: #225470;
-  padding: 20px 0 20px;
-  line-height: 5px;
-}
-
-.footer-copyright {
-  color: #fff;
-  font-size: 10px;
-  padding: 20px 20px;
-  margin-top: 5px;
-  color: white;
-}
-
 /* Media Queries */
-
-@media (max-width: 1050px) {
-  ul a {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 600px) {
-  h2 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  p.sidebar1 {
-    font-size: 35px;
-    left: -487px;
-    top: 150px;
-    height: 150em;
-    border-radius: 0px;
-    width: 340px;
-  }
-}
 
 @media (max-width: 800px) {
   .top-container {

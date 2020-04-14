@@ -1,4 +1,4 @@
-//weather and news app
+//weather app
 const input = document.querySelector(".input-text");
 const main = document.querySelector("#name");
 const button = document.querySelector("input.btn");
@@ -7,15 +7,6 @@ const desc = document.querySelector(".desc");
 const icon = document.querySelector(".icon");
 const country = document.querySelector(".country");
 const apiKeyWeather = "3f24b2bf14e436852ff873111d6e8a0d";
-const title = document.querySelector(".title");
-const author = document.querySelector(".author");
-const description = document.querySelector(".description");
-const newsUrl = document.querySelector(".newsUrl");
-const title2 = document.querySelector(".title2");
-const author2 = document.querySelector(".author2");
-const description2 = document.querySelector(".description2");
-const newsUrl2 = document.querySelector(".newsUrl2");
-const apiKeyNews = "165d3a1692a240bd9e158508db8eada3";
 
 button.addEventListener("click", function() {
   const weatherUrl =
@@ -41,6 +32,17 @@ button.addEventListener("click", function() {
 
     .catch(err => alert("Please search for a valid location"));
 });
+
+//news app
+const title = document.querySelector(".title");
+const author = document.querySelector(".author");
+const description = document.querySelector(".description");
+const newsUrl = document.querySelector(".newsUrl");
+const title2 = document.querySelector(".title2");
+const author2 = document.querySelector(".author2");
+const description2 = document.querySelector(".description2");
+const newsUrl2 = document.querySelector(".newsUrl2");
+const apiKeyNews = "165d3a1692a240bd9e158508db8eada3";
 
 const newsWeb =
   "https://newsapi.org/v2/everything?q=manufacturing&sortBy=publishedAt" +
