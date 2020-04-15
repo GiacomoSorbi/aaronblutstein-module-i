@@ -15,7 +15,7 @@ h3 {
 .showcase {
   grid-area: showcase;
   min-height: 400px;
-  background: url("Manufacturing.jpg");
+  background: url("images/Manufacturing.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
