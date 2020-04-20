@@ -103,13 +103,13 @@ function init() {
   setInterval(updateTime, 1000);
 }
 function updateTime() {
-  let clockdata = getClockStrings();
+  let clockdata = clockDate();
   dd.innerHTML = clockdata.datehtml;
   td.innerHTML = clockdata.timehtml;
   dd.dateTime = now.toISOString();
   td.dateTime = now.toISOString();
 }
-function getClockStrings() {
+function clockDate() {
   now = new Date();
   let year = now.getFullYear();
   let month = months[now.getMonth()];
