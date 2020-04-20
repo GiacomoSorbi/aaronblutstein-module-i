@@ -114,18 +114,6 @@
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 600px) {
-  p.sidebar1 {
-    font-size: 35px;
-    left: -487px;
-    top: 150px;
-    height: 150em;
-    border-radius: 0px;
-    width: 340px;
-  }
-}
-
 @media (max-aspect-ratio: 16/9) {
   .fullscreen-video-wrap video {
     width: 100%;
